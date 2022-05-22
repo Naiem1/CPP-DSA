@@ -11,28 +11,27 @@
 using namespace std;
 
 int main() {
-	auto a = 10; // here I used auto before a.
-	auto b = 15.5; // I have used auto before b and I assign a floating point value compiler automatically infer to data type for b.
-	auto c = 'A';
-	auto s = "Hello world!";
-	auto boo = true;
-	
-	cout << a << endl; // 10
-	cout << b << endl; //  15.5
-	cout << c << endl; // 'A'
-	cout << s << endl; // Hello World
-	cout << boo << endl; // true
+   auto a = 10; // here I used auto before a.
+   auto b = 15.5; // I have used auto before b and I assign a floating point value compiler automatically infer to data type for b.
+   auto c = 'A';
+   auto s = "Hello world!";
+   auto boo = true;
+
+   cout << a << endl; // 10
+   cout << b << endl; //  15.5
+   cout << c << endl; // 'A'
+   cout << s << endl; // Hello World
+   cout << boo << endl; // true
 
   // After that to check what datatype I have been assign to all the variable better understanding the `auto` I have used typeid(variable).name. whe we pass variable into typeid it give the type info of that variable and .name gives us short name of data type
 	
-	cout << typeid(a).name() << "\n"; // i
-	cout << typeid(b).name() << "\n"; // d
-	cout << typeid(c).name() << "\n"; // c
-	cout << typeid(s).name() << "\n"; // Pkc
-	cout << typeid(boo).name() << "\n"; // b
-	
-	
-	return 0;
+   cout << typeid(a).name() << "\n"; // i
+   cout << typeid(b).name() << "\n"; // d
+   cout << typeid(c).name() << "\n"; // c
+   cout << typeid(s).name() << "\n"; // Pkc
+   cout << typeid(boo).name() << "\n"; // b
+
+   return 0;
 }
 ```
 
