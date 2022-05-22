@@ -23,7 +23,8 @@ int main() {
    cout << s << endl; // Hello World
    cout << boo << endl; // true
 
-  // After that to check what datatype I have been assign to all the variable better understanding the `auto` I have used typeid(variable).name. whe we pass variable into typeid it give the type info of that variable and .name gives us short name of data type
+  /* After that to check what datatype I have been assign to all the variable better understanding the `auto` 
+  I have used typeid(variable).name. whe we pass variable into typeid it give the type info of that variable and .name gives us short name of data type */
 	
    cout << typeid(a).name() << "\n"; // i
    cout << typeid(b).name() << "\n"; // d
