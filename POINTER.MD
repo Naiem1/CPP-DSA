@@ -145,3 +145,13 @@ int main() {
       return 0;
   }
 ```
+
+### We can also create and array of pointers.
+```C++
+   int *ip[10]; // Create an array of 10 pointers
+    // Each of the elements of this particular array will be storing some address
+    int a = 20;
+    ip[2] = &a;
+    cout << *ip[2]; // 20
+    cout << ip[2]; // address
+```
