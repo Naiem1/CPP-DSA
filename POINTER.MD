@@ -94,3 +94,54 @@ int main() {
 ```
 
 ## Why Pointer
+
+## Array of Pointer
+```C++
+  #include <bits/stdc++.h>
+  using namespace std;
+
+  int main() {
+    // Write C++ code here
+   int marks[5] = {10, 20, 30, 40, 50};
+   
+   cout << marks << "\n"; // 0x7ffc049eddc0 - 1st address
+   cout << marks + 1 << "\n"; // 0x7ffc049eddc4 - 2nd address
+   cout << *marks << endl; // 10
+   cout << *marks + 1 << endl; // 11
+   cout << *(marks + 1) << endl; // 20
+   
+   for (int i = 0; i < 5; i++) {
+       cout << *marks + i << " "; // 10 20 30 40 50
+   }
+   
+   cout << endl;
+   
+   int *p = marks; 
+   cout << *p << endl; // 10
+   
+   for (int i = 0; i < 5; i++) {
+       cout << *( p + i) << " "; // 10 20 30 40 50
+   }
+   
+    cout << endl;
+  
+   cout << sizeof(marks) / sizeof(marks[0]) << endl; // 5
+   cout << sizeof(p) / sizeof(marks[0]) << endl; // 2
+   
+   cout << &marks << endl; // 0x7ffc049eddc0 -
+   cout << &marks[0] << endl; // 0x7ffc049eddc0
+   cout << &p  << endl; // 0x7ffc049eddb8
+   
+     cout << "==================" << endl;
+  //   cout << marks++ << endl; // error
+  // marks = marks + 1; // error
+  //   cout << *p++ << endl; // 10
+     for (int i = 0; i < 5; i++) {
+         cout << *p++ << " "; // 10 20 30 40 50
+     }
+
+
+
+      return 0;
+  }
+```
