@@ -128,15 +128,15 @@ int main() {
    cout << sizeof(marks) / sizeof(marks[0]) << endl; // 5
    cout << sizeof(p) / sizeof(marks[0]) << endl; // 2
    
-   cout << &marks << endl; // 0x7ffc049eddc0 -
-   cout << &marks[0] << endl; // 0x7ffc049eddc0
-   cout << &p  << endl; // 0x7ffc049eddb8
+   cout << &marks << endl; // 0x7ffc049eddc0 - 1st address of an array
+   cout << &marks[0] << endl; // 0x7ffc049eddc0 - 2nd address of an array
+   cout << &p  << endl; // 0x7ffc049eddb8 - pointer address
    
-     cout << "==================" << endl;
-  //   cout << marks++ << endl; // error
-  // marks = marks + 1; // error
-  //   cout << *p++ << endl; // 10
-     for (int i = 0; i < 5; i++) {
+   cout << "==================" << endl;
+   cout << marks++ << endl; // error
+   marks = marks + 1; // error
+   cout << *p++ << endl; // 10
+    for (int i = 0; i < 5; i++) {
          cout << *p++ << " "; // 10 20 30 40 50
      }
 
